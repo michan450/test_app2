@@ -1,0 +1,204 @@
+.header {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.header__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+.header__logo {
+  color: #f5b301;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: "Playfair Display", serif;
+  
+}
+.float {
+  max-width: 760px;
+  width: 100%;
+  margin: 20px auto;
+  
+}
+.title-row {
+  display: flex;
+  align-items: center;   /* 縦位置をそろえる */
+  gap: 20px;             /* キウイと商品一覧の間隔 */
+}
+
+.float__ttl {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.float__img {
+  width: 400px;
+}
+
+img {
+  width: 100%;
+}
+.back-link{
+    color: blue;
+    font-size: 25px;
+  text-decoration: none;
+}
+.product-top {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+.product-right {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.product-input {
+  width: 150%;
+  max-width: 320px;
+  padding: 6px 10px;
+  font-size: 16px;
+}
+.season-list {
+  display: flex;
+  gap: 16px;      /* ボタン間の余白 */
+  flex-wrap: wrap; /* 画面狭い時は折り返し */
+}
+.season-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+/* 元のチェックボックスを消す */
+.season-item input {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #555;
+  border-radius: 50%;   /* ← ○ */
+  display: inline-block;
+  position: relative;
+}
+
+/* チェックされたら中に● */
+.season-item input:checked::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #f5b301;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.season-text {
+  font-size: 14px;
+}
+.season-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.product-right__label{
+    margin-bottom: 20px;
+  font-size: 20px;
+  width: 100px;
+  height: 40px;
+    margin-bottom: 1px;
+}
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.error-box {
+  background: #ffecec;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.product-textarea {
+  width: 100%;
+  font-size: 20px;
+  height: 150px;
+  
+}
+.form-group {
+  display: flex;
+  flex-direction: column; /* ← 縦並び */
+  gap: 6px;
+}
+.action-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.action-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.action-right {
+  width: 60px;
+  display: flex;
+  justify-content: flex-end;
+}
+.btn {
+  width: 160px;
+  padding: 10px 0px;
+  border-radius: 4px;
+  text-align: center;
+  display: inline-flex;        /* ← これが効く */
+  align-items: center;         /* 縦中央 */
+  justify-content: center;     /* 横中央 */
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+}
+
+/* 戻る（グレー） */
+.btn-back {
+  background-color: #e0e0e0;
+  color: #333;
+  text-decoration: none;
+}
+
+/* 変更を保存（黄色） */
+.btn-save {
+  background-color: #f5b301;
+  color:black;
+}
+
+/* ホバー（ちょっとだけ） */
+.btn-back:hover {
+  background-color: #d5d5d5;
+}
+
+.btn-save:hover {
+  background-color: #e0a800;
+}
+.btn-delete {
+  color: #e53935;        /* 赤 */
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.btn-delete:hover {
+  color: #c62828;        /* 少し濃い赤 */
+}
+

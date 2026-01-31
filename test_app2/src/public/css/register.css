@@ -1,0 +1,124 @@
+.header {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.header__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+.header__logo {
+  color: #f5b301;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: "Playfair Display", serif;
+  
+}
+
+.contact-form__label{
+  margin: 0 auto;
+  width: 100%;
+  font-size: 20px;
+}
+
+.contact-form{
+   width: 800px;        /* フォームの横幅 */
+  margin: 0 auto;  
+  padding: 0 10px; 
+   box-sizing: border-box; 
+}
+.contact-form__group {
+  
+  flex-direction: column;
+  margin-bottom: 15px;
+  }
+
+.contact-form__item__input {
+    width: 100%;             /* 親フォームに合わせる */
+    box-sizing: border-box;  /* padding込みで幅100% */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 20px;
+    resize: vertical;
+}
+
+.update-form {
+    display: flex;
+    justify-content: center;  /* 中央揃え */
+    gap: 20px;                /* ボタン間のスペース */
+    margin-top: 30px;
+}
+
+.form-button {
+    flex: none;
+    width: 180px;  /* ボタンの横幅を少し小さく */
+}
+
+.form-button-submit {
+    display: block;           /* aタグでも幅100%にする */
+    width: 100%;
+    padding: 15px 0;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;       /* aタグの文字も中央に */
+    text-decoration: none;    /* aタグの下線消す */
+}
+
+.form-button-submit:first-child {
+    background: #ead039;  /* 登録ボタン */
+    color: #000;
+}
+
+.form-button-submit:last-child {
+    background: #a1a2aa;  /* 戻るボタン */
+    color: #000;
+}
+
+.form-button-submit.register {
+    background: #ead039; /* 黄色 */
+    color: #000;         /* 文字色は黒 */
+}
+
+/* 戻るボタン */
+.form-button-submit.back {
+    background: #a1a2aa; /* グレー */
+    color: #fff;         /* 文字色は白 */
+}
+
+  .contact-form__required{
+    color: #fff;
+  }
+  
+  .contact-form__seasons {
+  display: flex;
+  gap: 30px;          /* 季節同士の間隔 */
+  align-items: center;
+}
+
+.contact-form__seasons {
+  display: flex;
+  gap: 20px;           /* チェックボックス間のスペース */
+  align-items: center;
+}
+
+.contact-form__season-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;            /* チェックボックスと文字の間 */
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+/* チェックボックスのサイズを少し大きくしたい場合 */
+.contact-form__season-item input.contact-form__input {
+  width: 18px;
+  height: 18px;
+}

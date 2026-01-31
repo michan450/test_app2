@@ -1,0 +1,35 @@
+/node_modules
+/public/hot
+/public/storage
+/storage/*.key
+/vendor
+.env
+.env.backup
+.phpunit.result.cache
+docker-compose.override.yml
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+/.idea
+/.vscode
+
+# Docker/MySQL データ
+contact-form/docker/mysql/data/
+database/mysql-data/
+
+# Storageやキャッシュ
+/storage/*
+/public/storage/*
+/vendor/*
+
+# OSやエディタのファイル
+.DS_Store
+*.log
+*.tmp
+
+# サブリポジトリ
+Japan/
+contact-form/
+test_test/
+testgit/

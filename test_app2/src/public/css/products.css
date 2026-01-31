@@ -1,0 +1,200 @@
+.header {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.header__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+.header__logo {
+  color: #f5b301;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: "Playfair Display", serif;
+  
+}
+body{
+    background-color:#c6a0a0db;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.container {
+  max-width: 1800px;
+  padding: 40px;
+  background-color:#f5efef;
+  
+}
+
+.logo{
+  font-size: 30px;
+  font-family: "Hammersmith One", sans-serif;
+}
+/* 左右分割 */
+.content {
+  display: flex;
+  gap: 30px;
+}
+
+/* 左カラム */
+.sidebar {
+  width: 220px;
+}
+
+.action {
+  background: #f5b301;
+  color:black;
+  border: none;
+  padding: 15px;
+  margin-bottom: 10px;
+  width: 30px;
+  border-radius: 10px;
+}
+
+.search-box{
+  border-radius: 20px;
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    
+}
+.search-input {
+  width: 200px;   /* ← 好きな幅に調整 */
+}
+.add-btn {
+  margin: 0;                 /* auto を無効化 */
+  padding: 12px 40px;
+  background: #f5b301;
+  border-radius: 12px;
+  color: #000;
+  text-decoration: underline;
+  display: inline-block;
+}
+
+   
+.search-btn{
+    display: flex;
+    gap: 200px;
+    flex-direction: column;
+    margin: 32px auto 0;
+    padding: 10px 85px;
+    border-radius: 10px;
+    background: #f5b301;
+    border: none;
+}
+.price-text{
+    font-size: 20px;
+}
+.contact-form__select{
+    padding: 8px 20px;
+    width: 100%;
+    
+}
+
+/* 右 商品一覧 */
+.product-list {
+  max-width: 1100px;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.product-card {
+  background: #fff;
+    padding: 10px;
+    border-radius: 6px;
+    height: auto;
+    width: 100%;
+    height: auto;
+}
+
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  
+}
+.product-info {
+  display: flex;
+  justify-content: space-between; /* 左右に配置 */
+  align-items: center;            /* 縦位置を揃える */
+}
+
+.product-info p {
+  font-weight: bold;
+}
+.flex_card{
+  width: 1100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+   max-width: 1100px;
+  margin: 0 auto;
+
+}
+.product-name {
+  font-weight: bold;
+}
+
+.product-price {
+  text-align: right;
+  font-weight: bold;
+}
+
+/* ページネーション */
+
+/* ページネーション全体 */
+.pagination-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+/* ul */
+.pagination {
+  display: flex;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* li */
+.pagination li {
+  display: inline-block;
+}
+
+/* a, span 共通 */
+.pagination a,
+.pagination span {
+  display: block;
+  padding: 8px 14px;
+  border-radius: 6px;
+  background: #fff;
+  color: #333;
+  text-decoration: none;
+  border: 1px solid #ddd;
+}
+
+/* 現在のページ */
+.pagination .active span {
+  background: #f5b301;
+  color: #000;
+  font-weight: bold;
+}
+
+/* 無効（Previous / Next） */
+.pagination .disabled span {
+  color: #aaa;
+  background: #f7f7f7;
+}
+
