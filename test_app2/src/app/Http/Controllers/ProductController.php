@@ -49,7 +49,10 @@ public function update(ProductUpdateRequest $request, Product $product)
 
     // 画像更新があれば保存
     if ($request->hasFile('image')) {
-        $data['image'] = $request->file('image')->store('products', 'public');
+        $data['image'] = $request->file('image')->store('fruits-img', 'public');
+    } else {
+        // 画像が選択されていない場合は更新しない
+        unset($data['image']);
     }
 
     $product->update($data);
@@ -75,7 +78,7 @@ public function store(ProductStoreRequest $request)
 
     // 画像アップロード処理
     if ($request->hasFile('image')) {
-        $data['image'] = $request->file('image')->store('products', 'public');
+        $data['image'] = $request->file('image')->store('fruits-img', 'public');
     }
 
     Product::create($data);

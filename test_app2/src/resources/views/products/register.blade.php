@@ -24,9 +24,9 @@
   </header>
   <form action="{{ route('products.store') }}" method="POST" enctype="multipart/form-data">
 @csrf
-</form>
 
-    <form class="contact-form">
+
+    <div class="contact-form">
 <h1 class="contact-form__heading">商品登録</h1>
 <div class="contact-form__inner">
 
@@ -34,17 +34,17 @@
 <label class="contact-form__label" for="name">商品名</label>
 <span class="contact-form__required">必須</span>
 <input class="contact-form__item__input" type="text" name="content" value="{{ old('name') }}">
-@error('name') <p>{{ $message }}</p> @enderror
+@error('name') <p class="error-message">{{ $message }}</p> @enderror
 </div>
 <div class="contact-form__group">
 <label class="contact-form__label" for="name">値段</label>
 <input class="contact-form__item__input" type="number" name="price" value="{{ old('price') }}">
-@error('price') <p>{{ $message }}</p> @enderror
+@error('price') <p class="error-message">{{ $message }}</p> @enderror
 </div>
 <div class="contact-form__group">
 <label class="contact-form__label" for="name">商品画像</label>
 <input class="contact-file__input" type="file" name="image">
-@error('image') <p>{{ $message }}</p> @enderror
+@error('image') <p class="error-message">{{ $message }}</p> @enderror
 </div>
 <div class="contact-form__group">
   <label class="contact-form__label">季節</label>
@@ -65,8 +65,7 @@
   </div>
 </div>
   @error('seasons')
-    <p class="error">{{ $message }}</p>
-  @enderror
+    <p class="error-message">{{ $message }}</p> @enderror
 </div>
 
 <div class="contact-form__group">
@@ -76,7 +75,7 @@
           class="contact-form__item__input"
           rows="4"
       >{{ old('description') }}</textarea>
-      @error('description') <p style="color:red">{{ $message }}</p> @enderror
+      @error('description') <p class="error-message">{{ $message }}</p> @enderror
   </div>
   
 
@@ -87,6 +86,7 @@
   <div class="form-button">
     <a href="{{ route('products.index') }}" class="form-button-submit back">戻る</a>
   </div>
+</div>
 </div>
 
 </form>

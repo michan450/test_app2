@@ -94,16 +94,15 @@
 <div class="action-center">
 <a href="{{ route('products.index') }}" class="btn btn-back">戻る</a>
     <button type="submit" class="btn btn-save">変更を保存</button>
-  </div>
-</div>
-</form>
-<div class="action-row">
-<div class="action-right">
     <form action="{{ route('products.destroy', $product) }}" method="POST">
       @csrf
       @method('DELETE')
       <button type="submit" class=" btn-delete">🗑</button>
     </form>
+  </div>
+</div>
+</form>
+
   </div>
 
 </div>

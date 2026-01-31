@@ -194,8 +194,9 @@ img {
   color: #e53935;        /* 赤 */
   background: none;
   border: none;
-  font-size: 22px;
+  font-size: 40px;
   cursor: pointer;
+  margin-left: 30px; 
 }
 
 .btn-delete:hover {
