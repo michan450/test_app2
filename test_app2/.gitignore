@@ -1,0 +1,8 @@
+# Docker MySQL data
+docker/mysql/data/
+
+# OS
+.DS_Store
+
+# MySQL data (auto-generated)
+docker/mysql/data/
